@@ -8,9 +8,7 @@ using UnityEngine.UIElements;
 public class ShipView : MonoBehaviour
 {
     [SerializeField] List<GameObject> lives;
-
     GameManager gameManager;
-
     public bool TakeDamage { get; set; }
     
     void Start()

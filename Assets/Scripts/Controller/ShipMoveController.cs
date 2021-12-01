@@ -17,7 +17,6 @@ namespace Assets.Scripts.Controller
             this.shipMoveView = shipMoveView;
             this.shipMoveModel = shipMoveModel;
 
-
             this.shipMoveView.Speed = this.shipMoveModel.Speed;
         }
     }

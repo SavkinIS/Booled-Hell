@@ -14,10 +14,4 @@ public class TerrainManager : MonoBehaviour
         terrainModel = new MoveTerrainModel(0.75f, 15);
         terrainController = new MoveTerrainController(terrainView, terrainModel);
     }
-
-    // Update is called once per frame
-    void Update()
-    {
-
-    }
 }

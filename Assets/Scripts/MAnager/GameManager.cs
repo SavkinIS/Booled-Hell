@@ -47,7 +47,7 @@ public class GameManager : MonoBehaviour
             DataWork.Save(gameData);
         }
 
-        levelManager.Initcialaze();
+        levelManager.Initialization();
         gameStatus = new ReactiveProperty<bool>(true);
 
         //gameStatus.ObserveEveryValueChanged(g => gameStatus).Where(gs => gs.Value == false).Select(a=>a.Value==false).Subscribe(_ => StartCoroutine(LoadMainScene()));

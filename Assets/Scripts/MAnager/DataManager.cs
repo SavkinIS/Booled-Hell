@@ -10,14 +10,9 @@ public class DataManager : MonoBehaviour
 
     DataController dataController;
     DataModel dataModel;
-
-
    void Start()
     {
         dataModel = new DataModel();
-
         dataController = new DataController(dataView, dataModel);
-
-
     }
 }

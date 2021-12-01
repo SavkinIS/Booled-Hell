@@ -22,6 +22,7 @@ public class DataView : MonoBehaviour
 
     private void Start()
     {
+        //Assign methods to buttons
         level1.OnClickAsObservable().RepeatUntilDestroy(this).Subscribe(sc => LoadScene(1));  
         level2.OnClickAsObservable().RepeatUntilDestroy(this).Subscribe(sc => LoadScene(2));  
         level3.OnClickAsObservable().RepeatUntilDestroy(this).Subscribe(sc => LoadScene(3));

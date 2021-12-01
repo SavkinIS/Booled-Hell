@@ -6,14 +6,17 @@ using DG.Tweening;
 
 public class ShipMoveView : MonoBehaviour
 {
-    [SerializeField] float moveX;    
+
+    [Tooltip("—корость по X")]
+    [SerializeField] float moveX;
+    [Tooltip("—корость вращение€")]
     [SerializeField] float rollSpeed;
+    [Tooltip("”гол ¬ращени€")]
     [SerializeField] float rollAxis;
+    [Tooltip("ƒиапазон отклонени€ по X")]
     [SerializeField] float rangeX;
+    [Tooltip("‘актор отклонен€и по оси Y при перемещении")]
     [SerializeField] float factorY;
-
-
-
 
     float speed;
     
@@ -27,14 +30,6 @@ public class ShipMoveView : MonoBehaviour
     {
         Observable.EveryUpdate().Select(_ =>Input.GetAxis("Horizontal")).RepeatUntilDestroy(this).Subscribe(b=>Move(b));
     }
-
-    // Update is called once per frame
-    void Update()
-    {
-
-        
-    }
-
     void Move(float axis)
     {
         var axisY = axis * factorY;

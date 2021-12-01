@@ -10,8 +10,13 @@ public class AsteroidManagerView : MonoBehaviour
     [SerializeField] GameObjectPool asteroidPool;
     [SerializeField] AsteroidView asteroidView;
 
-
+    /// <summary>
+    /// range of positions by X
+    /// </summary>
     float xRangePos;
+    /// <summary>
+    /// Maxrange of positions by Z
+    /// </summary>
     float maxRangeZ;
     float speedZAster;    
     float asteroidSpanPeriod;

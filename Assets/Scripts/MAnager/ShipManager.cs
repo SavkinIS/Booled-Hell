@@ -18,8 +18,7 @@ public class ShipManager : MonoBehaviour
     {
         shipMoveModel = new ShipMoveModel(0.75f);
         shipMoveController = new ShipMoveController(shipMoveView, shipMoveModel);
-
-        shipModel = new ShipModel(3);
+shipModel = new ShipModel(3);
         shipController = new ShipController(shipView, shipModel);
 
     }

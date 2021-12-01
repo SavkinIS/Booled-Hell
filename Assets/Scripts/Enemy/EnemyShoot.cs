@@ -11,7 +11,6 @@ public class EnemyShoot : MonoBehaviour
 
     GameManager gameManager;
     float shootRate;
-
     public float ShootRate { get => shootRate; set => shootRate = value; }
 
     void Start()

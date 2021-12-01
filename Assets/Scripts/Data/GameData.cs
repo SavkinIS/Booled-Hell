@@ -9,13 +9,8 @@ namespace Assets.Scripts.Data
     [Serializable]
     public class GameData
     {
-        //    public Level Level_1;
-        //    public Level Level_2;
-        //    public Level Level_3;
-
         public List<Level> Levels;
         public Indicators Indicators;
-
 
         public Level GetLevel(int i)
         {

@@ -32,7 +32,6 @@ namespace Assets.Scripts.Controller
                 Data.DataWork.Init();
                 this.dataModel.GameData.Value = Data.DataWork.GetGameData();
             };
-                // this.shipModel.Lives.ObserveEveryValueChanged(l => l.Value).Subscribe(lv => this.shipView.RenderLives(this.shipModel.Lives.Value));
         }
     }
 }

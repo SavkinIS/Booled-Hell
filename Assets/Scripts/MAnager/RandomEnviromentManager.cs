@@ -9,19 +9,19 @@ public class RandomEnviromentManager : MonoBehaviour
 { 
     [SerializeField] GameObjectPool cubePool;
     [SerializeField] AsteroidView cubeView;
-
-
+    [Tooltip("Диапазон спавна по оси X")]
     [SerializeField] float xRangePos;
+    [Tooltip("Максимальное растояние по оси Z")]
     [SerializeField] float maxRangeZ;
+    [Tooltip("Скорость по оси Z")]
     [SerializeField] float speedZAster;
+    [Tooltip("Переодичность спавана объектов")]
     [SerializeField] float cubeSpanPeriod;
+    [Tooltip("Количество объектов")]
     [SerializeField] int cubeAmount;
 
     List<AsteroidController> cubeControllers;
     AsteroidModel cubeModel;
-
-
-
 
     public int CubeAmount { get => cubeAmount; set => cubeAmount = value; }
     // Start is called before the first frame update

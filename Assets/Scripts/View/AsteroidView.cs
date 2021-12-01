@@ -16,7 +16,6 @@ public class AsteroidView : EnemyParent
 
     private void Start()
     {
-
         gameManager = FindObjectOfType<GameManager>();
         Observable.EveryUpdate().RepeatUntilDestroy(this).Subscribe(m => Move(speedZ));
         Instantiate(randomRatates[Random.Range(0, randomRatates.Length - 1)], transform);

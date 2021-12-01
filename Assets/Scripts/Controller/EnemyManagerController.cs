@@ -20,7 +20,6 @@ namespace Assets.Scripts.Controller
             InitView();
         }
 
-
        void InitView()
         {
             ememyManagerView.Init(

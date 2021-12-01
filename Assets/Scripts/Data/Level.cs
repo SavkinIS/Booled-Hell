@@ -16,8 +16,6 @@ namespace Assets.Scripts.Data
 
         public bool Open;
 
-
-
         public bool IsInit()
         {
             if (EnemyCount == 0 || AsteroidCount == 0 || EnemySpanPeriod == 0 || AsteroidSpanPeriod == 0) return false;

@@ -11,8 +11,10 @@ namespace Assets.Scripts.Data
     public static class DataWork
     {
         static GameData gameData;
-
-
+        /// <summary>
+        /// Getting data
+        /// </summary>
+        /// <returns></returns>
         public static GameData GetGameData()
         {
             if (gameData != null) return gameData;
@@ -20,7 +22,7 @@ namespace Assets.Scripts.Data
         }
 
         // <summary>
-        /// name of the configuration file
+        /// Name of the configuration file
         /// </summary>
         const string saveData = "SaveData.json";
         readonly static string path = Application.dataPath + "/Scripts/Data/" + saveData;

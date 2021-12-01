@@ -21,12 +21,8 @@ namespace Assets.Scripts.Controller
             this.shipModel = shipModel;
 
             this.shipModel.Lives.ObserveEveryValueChanged(l => l.Value).Subscribe(lv => this.shipView.RenderLives(this.shipModel.Lives.Value));
-
             this.shipView.ObserveEveryValueChanged(v => v.TakeDamage).Subscribe(m => TakeDamage());
-
         }
-
-
 
         void TakeDamage()
         {

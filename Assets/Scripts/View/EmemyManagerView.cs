@@ -10,15 +10,27 @@ public class EmemyManagerView : MonoBehaviour
     
     [SerializeField] GameObjectPool enemyshipPool;
     [SerializeField] EnemyView enemyView;
+    /// <summary>
+    /// the speed of the shot
+    /// </summary>
     float shootRate;
+    
     float speedZEnemy;
+    
+    /// // <summary>
+    /// Maxrange of positions by Z
+    /// </summary>
     float maxRangeZ;
     float spawnPeriod;
+    /// <summary>
+    /// range of positions by X
+    /// </summary>
     float xRangePos;
+    /// <summary>
+    /// Count
+    /// </summary>
     int enemyAmount;
     
-    
-
     List<EnemyController> enemyControllers;
     EnemyModel enemyModel;
 

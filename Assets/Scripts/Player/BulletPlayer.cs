@@ -17,13 +17,4 @@ public class BulletPlayer : Bullet
 
     }
 
-    //private void OnCollisionEnter(Collision collision)
-    //{
-    //    if (collision.transform.TryGetComponent(out RandomRatate asteroid))
-    //    {
-    //        asteroid.transform.parent.gameObject.SetActive(false);
-    //        gameObject.SetActive(false);
-    //    }
-
-    //}
 }

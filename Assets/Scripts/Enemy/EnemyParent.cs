@@ -12,12 +12,13 @@ public class EnemyParent : MonoBehaviour
         transform.Translate(Vector3.back * speedZ * Time.deltaTime);
     }
 
-
+    /// <summary>
+    /// Disable GameObject
+    /// </summary>
     public void DisableGO()
     {
         gameObject.SetActive(false);
     }
-
 
     private void OnCollisionEnter(Collision collision)
     {

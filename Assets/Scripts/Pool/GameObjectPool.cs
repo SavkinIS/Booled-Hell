@@ -18,7 +18,9 @@ public class GameObjectPool : MonoBehaviour
     {
         //InitPool();
     }
-
+    /// <summary>
+    /// filling in pool objects
+    /// </summary>
     public void InitPool()
     {
         if (amountToPool <= 0) return; 
@@ -33,6 +35,11 @@ public class GameObjectPool : MonoBehaviour
         }
     }
 
+    /// <summary>
+    /// filling in pool objects
+    /// </summary>
+    /// <param name="pooledObjectPrefabs">Object</param>
+    /// <param name="amountToPool">Count</param>
     public void InitPool(GameObject pooledObjectPrefabs, int amountToPool)
     {
         if (amountToPool <= 0) return;
@@ -47,6 +54,10 @@ public class GameObjectPool : MonoBehaviour
         }
     }
 
+    /// <summary>
+    /// 
+    /// </summary>
+    /// <returns></returns>
     public GameObject GetPooledObject() 
     { 
         for (int i = 0; i < pooledObjects.Count; i++)
@@ -59,9 +70,4 @@ public class GameObjectPool : MonoBehaviour
         return null;
     }
 
-    internal void RemoveGO(GameObject pooledProjectile)
-    {
-        pooledObjects.Remove(pooledProjectile);
-        Destroy(pooledProjectile.gameObject, 0.2f);
-    }
 }
