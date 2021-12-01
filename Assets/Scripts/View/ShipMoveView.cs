@@ -51,16 +51,13 @@ public class ShipMoveView : MonoBehaviour
             _moveX = moveX;
         }
 
-        
         var rot = transform.localRotation;
         transform.DORotate(new Vector3(0, axisY, axisZ), rollSpeed);
         var xPos = transform.position.x + _moveX;
         if(xPos>-rangeX && xPos < rangeX)
         {
             transform.DOMoveX(xPos, speed);
-        }
-        
-
+        }    
     }
 
     void OnDestroy()

@@ -6,7 +6,6 @@ using UniRx;
 public class Bullet : MonoBehaviour
 {
     
-
    internal void DisableGO()
     {
         gameObject.SetActive(false);
