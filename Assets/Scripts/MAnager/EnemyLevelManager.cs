@@ -1,4 +1,4 @@
-using Assets.Scripts.Controller;
+п»їusing Assets.Scripts.Controller;
 using Assets.Scripts.Model;
 using System.Collections;
 using System.Collections.Generic;
@@ -9,19 +9,19 @@ using UniRx;
 public class EnemyLevelManager : MonoBehaviour
 {
 
-    [Tooltip("Переодичность выстрела")]
+    [Tooltip("РџРµСЂРµРѕРґРёС‡РЅРѕСЃС‚СЊ РІС‹СЃС‚СЂРµР»Р°")]
     [SerializeField] float shootRate;
-    [Tooltip("Скорость вражеского коробля")]
+    [Tooltip("РЎРєРѕСЂРѕСЃС‚СЊ РІСЂР°Р¶РµСЃРєРѕРіРѕ РєРѕСЂРѕР±Р»СЏ")]
     [SerializeField] float speedZEnemy;
-    [Tooltip("Менеджер врагов")]
-    [SerializeField] EmemyManagerView  ememyManagerView;
-    [Tooltip("Менеджер астероидов")]
-    [SerializeField] AsteroidManagerView  asteroidsManagerView;
-    [Tooltip("Максимальное растояние по оси Z")]
+    [Tooltip("РњРµРЅРµРґР¶РµСЂ РІСЂР°РіРѕРІ")]
+    [SerializeField] EmemyManagerView ememyManagerView;
+    [Tooltip("РњРµРЅРµРґР¶РµСЂ Р°СЃС‚РµСЂРѕРёРґРѕРІ")]
+    [SerializeField] AsteroidManagerView asteroidsManagerView;
+    [Tooltip("РњР°РєСЃРёРјР°Р»СЊРЅРѕРµ СЂР°СЃС‚РѕСЏРЅРёРµ РїРѕ РѕСЃРё Z")]
     [SerializeField] float maxRangeZ;
-    [Tooltip("Диапазон по оси Х")]
+    [Tooltip("Р”РёР°РїР°Р·РѕРЅ РїРѕ РѕСЃРё РҐ")]
     [SerializeField] float xRangePos;
-    [Tooltip("Скорость Атероида")]
+    [Tooltip("РЎРєРѕСЂРѕСЃС‚СЊ РђС‚РµСЂРѕРёРґР°")]
     [SerializeField] float speedZAster;
 
     /// <summary>

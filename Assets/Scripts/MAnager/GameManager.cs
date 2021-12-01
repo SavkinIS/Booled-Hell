@@ -1,4 +1,4 @@
-using Assets.Scripts.Data;
+﻿using Assets.Scripts.Data;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -10,10 +10,15 @@ using DG.Tweening;
 public class GameManager : MonoBehaviour
 {
     [SerializeField] EnemyLevelManager levelManager;
+    [Tooltip("Текущий уровень")]
     [SerializeField] int currentLvl;
+    [Tooltip("Диапазон количесва врагов/астероидов")]
     [SerializeField] Vector2 enemyObjectsRangeCount;
+    [Tooltip("Диапазон спавна объектв")]
     [SerializeField] Vector2 enemyObjectsSpawnPeriod;
+    [Tooltip("Текст отображающий количество оставшихся врагов")]
     [SerializeField] TMP_Text enemyCountTx;
+    [Tooltip("Задержка при загрузки сцены")]
     [SerializeField] float loadSceneAfter;
     
 
